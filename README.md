@@ -62,29 +62,42 @@ _Use a bulleted list to answer the following - include pictures of data frames o
 * **Other impact:** Replacing the 9th grade scores at Thomas High School also impacted several other metrics:
     * **Math and Reading Scores by Grade:** Average math and reading scores only changed for 9th graders at Thomas High School. I replaced the average score for the 9th graders at Thomas High School with NaN, so it could not calculate an average and displayed NaN. No other grade-level or school-level data was changed, as you can see in the pictures below. (Average reading scores by grade are shown, but it was the same for averaeg math scores by grade.)
 
-     _Average Reading Scores by Grade Before_
+   _Average Reading Scores by Grade Before_
      
-![image](https://user-images.githubusercontent.com/93058069/149437389-c1517289-cdce-4773-b4df-b43d56e45bff.png)
+   ![image](https://user-images.githubusercontent.com/93058069/149437389-c1517289-cdce-4773-b4df-b43d56e45bff.png)
 
    _Average Reading Scores by Grade After_
 
-![image](https://user-images.githubusercontent.com/93058069/149437462-3e21b1aa-7b54-4d11-9409-7baa89a1f871.png)
+   ![image](https://user-images.githubusercontent.com/93058069/149437462-3e21b1aa-7b54-4d11-9409-7baa89a1f871.png)
 
-  * **Score by School Spending:** Thomas High School averages $638.00 in spending per student, so it falls into the third spending bin of $630-644. Replacing the scores for 9th graders at Thomas only impacted overall statistics for Thomas, so the $630-644 bin is the only one that would have changed. There are three other schools in the $630-644 spending bin: Figueroa, Ford, and Rodriguez High Schools. The change in average reading and math scores and passing percentages was so minor that it did not have an impact on the total spending bin. All five metrics look the same in the before and after images below with the current one decimal (for average math/reading scores) or no decimal (for the percentages) formatting.
+  * **Score by School Spending:** Thomas High School averages $638.00 in spending per student, so it falls into the third spending bin of $630-644. Replacing the scores for 9th graders at Thomas only impacted overall statistics for Thomas, so the $630-644 bin is the only one that would have changed. There are three other schools in the $630-644 spending bin: Figueroa, Ford, and Rodriguez high schools. The change in average reading and math scores and passing percentages was so minor that it did not have an impact on the total spending bin. All five metrics look the same in the before and after images below with the current one decimal (for average math/reading scores) or no decimal (for the percentages) formatting.
 
    _Average Scores by Spending Bin Before_
    
-![image](https://user-images.githubusercontent.com/93058069/149437909-6b0e8e79-f403-4879-8732-72d4ed4eec5d.png)
+   ![image](https://user-images.githubusercontent.com/93058069/149437909-6b0e8e79-f403-4879-8732-72d4ed4eec5d.png)
 
    _Average Scores by Spending Bin After_
    
-![image](https://user-images.githubusercontent.com/93058069/149438429-3f0aa42f-0578-4235-912b-e548a7a2b13b.png)
+   ![image](https://user-images.githubusercontent.com/93058069/149438429-3f0aa42f-0578-4235-912b-e548a7a2b13b.png)
 
-* **Scores by School Size:**
-* 
-7.   scores by school size
-8.   scores by school type
+* **Scores by School Size:** With 1635 students, Thomas qualifies as a medium-sized school (1000-2000). There are four schools in the medium school size bin: Cabrera, Griffin, Shelton, and Wright high schools. The medium school size metrics is the only thing that could change, but as with the before/after results for scores by spending bin, there is no change in the before and after average scores. The impact of replacing 9th grade scores at Thomas does not show up when looking at average scores to one decimal or passing percentages without a decimal.
 
+    _Average Scores by School Size Before_
+    
+   ![image](https://user-images.githubusercontent.com/93058069/149439888-41e79bf8-aece-46ec-9652-5b6cf9636020.png)
 
+   _Average Scores by School Size After_
+   
+   ![image](https://user-images.githubusercontent.com/93058069/149439921-1639fafe-4aab-4465-9790-a242631fac22.png)
+
+*  **Scores by School Type:** Thomas is one of eight schools in the district that is a charter school, thus replacing data for 9th graders at Thomas could only impact the charter school type row in the before/after analysis. As with the two examples for scores by spending bin or scores by school size bin, there are so many school schools represented in this data that replacing data for one grade at one school did not impact the results (see below).
+
+    _Average Scores by School Type Before_
+    
+    ![image](https://user-images.githubusercontent.com/93058069/149440476-e1d293db-12f4-4df6-bcfa-56c136a43778.png)
+
+    _Average Scores by School Type After_
+    ![image](https://user-images.githubusercontent.com/93058069/149440509-f0394e15-7a21-4279-9b55-f9c32f0fb627.png)
+ 
 # Summary
 _list the four changes to the school district analysis after reading and math scores have been replaced_
