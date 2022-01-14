@@ -47,7 +47,7 @@ _Use a bulleted list to answer the following - include pictures of data frames o
 
      ![image](https://user-images.githubusercontent.com/93058069/149420340-e9a4f53e-2f88-45d7-8f10-4d4f92dcb1e0.png)
 
- * **Impact to school summary:** The school summary had a more noticeable change for the Thomas High School row because the 461 9th graders made up 28% of the student population. None of the data changed for other schools, so I chose to show the difference before and after in just the Thomas High School row for space saving purposes. (The full table can be seen in the PyCitySchool_Challenge jupyter notebook.) Removing the 9th grade math and reading scores didn't impact the school type, student count, school budget, or per student budget, but did change the percentages for every other metric. Average math score went down because the average of the 9th grade math score (as seen above) was 83.59, which is higher than the 10-12th grade average. The percentage passing math also went down. Inversely, the average reading score and % passing reading went up. The total overall passing % declined after 9th grade data was removed. 
+ * **Impact to school summary:** The school summary had a more noticeable change for the Thomas High School row because the 461 9th graders made up 28% of the student population. None of the data changed for other schools, so I chose to show the difference before and after in just the Thomas High School row for space saving purposes. (The full DataFrame can be seen in the PyCitySchool_Challenge jupyter notebook.) Removing the 9th grade math and reading scores didn't impact the school type, student count, school budget, or per student budget, but did change the percentages for every other metric. Average math score went down because the average of the 9th grade math score (as seen above) was 83.59, which is higher than the 10-12th grade average. The percentage passing math also went down. Inversely, the average reading score and % passing reading went up. The total overall passing % declined after 9th grade data was removed. 
 
      _School District Summary Before (only Thomas row shown)_
      
@@ -59,13 +59,29 @@ _Use a bulleted list to answer the following - include pictures of data frames o
 
 * **Impact on performance compared to other schools:** The overall passing percentage for Thomas dropped 0.32% after taking out the 9th grade math and reading scores, but it still had the second best overall passing rate behind Cabrera High School. Thomas also ranked 5th both before and after in average reading scores, but went from the school with the highest passing reading percentage to third best. The drop in average math scores also impacted Thomas High School compared to the other schools because it went from the school with the fourth best average math scores to 6th. The overall passing math percentage compared to other schools remained the same at 7th both before and after. 
 
-* **Other impact** Replacing the 9th grade scores at Thomas High School also impacted several other metrics:
-    * **Math and Reading Scores by Grade**
+* **Other impact:** Replacing the 9th grade scores at Thomas High School also impacted several other metrics:
+    * **Math and Reading Scores by Grade:** Average math and reading scores only changed for 9th graders at Thomas High School. I replaced the average score for the 9th graders at Thomas High School with NaN, so it could not calculate an average and displayed NaN. No other grade-level or school-level data was changed, as you can see in the pictures below. (Average reading scores by grade are shown, but it was the same for averaeg math scores by grade.)
 
+     _Average Reading Scores by Grade Before_
+     
+![image](https://user-images.githubusercontent.com/93058069/149437389-c1517289-cdce-4773-b4df-b43d56e45bff.png)
 
-4. ABOVE How does replacing the ninth grade scores affect the following:
-5.   math and reading scores by grade
-6.   scores by school spending
+   _Average Reading Scores by Grade After_
+
+![image](https://user-images.githubusercontent.com/93058069/149437462-3e21b1aa-7b54-4d11-9409-7baa89a1f871.png)
+
+  * **Score by School Spending:** Thomas High School averages $638.00 in spending per student, so it falls into the third spending bin of $630-644. Replacing the scores for 9th graders at Thomas only impacted overall statistics for Thomas, so the $630-644 bin is the only one that would have changed. There are three other schools in the $630-644 spending bin: Figueroa, Ford, and Rodriguez High Schools. The change in average reading and math scores and passing percentages was so minor that it did not have an impact on the total spending bin. All five metrics look the same in the before and after images below with the current one decimal (for average math/reading scores) or no decimal (for the percentages) formatting.
+
+   _Average Scores by Spending Bin Before_
+   
+![image](https://user-images.githubusercontent.com/93058069/149437909-6b0e8e79-f403-4879-8732-72d4ed4eec5d.png)
+
+   _Average Scores by Spending Bin After_
+   
+![image](https://user-images.githubusercontent.com/93058069/149438429-3f0aa42f-0578-4235-912b-e548a7a2b13b.png)
+
+* **Scores by School Size:**
+* 
 7.   scores by school size
 8.   scores by school type
 
